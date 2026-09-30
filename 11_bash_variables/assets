@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+mkdir -p assets
+touch assets/cool{1..5}.md
