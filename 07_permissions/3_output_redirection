@@ -1,0 +1,4 @@
+#!/usr/bin /env bash
+
+# poutput redirection
+# echo '# Input and output' > README.md
