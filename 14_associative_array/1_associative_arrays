@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+declare -A movie_ratings
+
+movie_ratings["inception"]=5

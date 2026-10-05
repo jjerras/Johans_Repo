@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+fruits=(apple pear banan kiwi)
+echo "@fruits"
+echo "${fruits}"
+echo "${fruits[2]"
+
+# gets all elemets
+echo "@{fruits[@]"

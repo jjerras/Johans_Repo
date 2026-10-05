@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+
+
+file=secret.projectX.pdf
+
+# non-greedy - till första punkten
+echo "${file#*.}"
+# greedy - till sista punkten
+echo "${file##*.}"
+# * efter . = börja från slutet
+echo "${file%.*}"
+echo "${file%%.*}"
+
+# environment variable
+echo "$PWD"
+
+repo_path="${PWD%/*}"
+echo "$repo_path"
+
+repo_name="${repo_path##*/}"
+echo "$repo_name"
