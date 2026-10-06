@@ -2,7 +2,9 @@
 
 echo "Hello using bash"
 
-name='Kokchun'
+name='Johan'
 
 echo "Hello $name"
-echo 'Hi $name'
+# echo 'Hi $name'
+
+printf "Name: %s\nAge: %d\n" $name 35

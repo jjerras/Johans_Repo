@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# output redirection
+echo '# Input and output' > README.md
+# > clobering -> overwrite content
+echo
+echo 'This note is about I/O in bash' >> README.md
+
+# heredoc to write multiple lines of text
+cat >> README.md <<EOF
+
+## Standard streams in bash
+- standard input 0 -> input to comḿand 
+- standard output 1 -> normal command output
+- standard error 2 -> error massage
+
+EOF
+
+echo "## Files in this folder:" >> README.md 
+tree >> README.md
+
+echo
+echo "My current working directory is: " >> README.md
+
+pwd >> README.md 

@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 
+echo "5*2 = $((5*2))"
+
+num1=5
+num2=3
+
+echo "num1 = $num1"
+
+echo "num2 = $num2"
+
+
+echo "Sum: $((num1+num2))"
+
 echo "5*3 = $((5*3))"
 echo "5-3 = $((5-3))"
 echo "5+3 = $((5+3))"

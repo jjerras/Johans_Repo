@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+name=$1
+last_name=$2
+echo "Hello $name $last_name"
+
+echo "You have provided $# args when running this program"

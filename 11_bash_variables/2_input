@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 
 read -p 'Enter your name: ' name
-echo "Hallo $name"
+echo "Hello $name"
+
+# Silent input
+read -sp "Enter your secret message: " message
+echo
+echo "your secret is: $message "
