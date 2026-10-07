@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+i=1
+# List-based for loop
+for fruit in apple pear banana kiwi; do
+    echo "yummy fruit $i $fruit"
+    ((i+=1))
+done
+
+echo "ranged-based for loop"
+# range-based for loop (brace expansion)
+for i in {1..5}; do
+    echo "$i"
+done
+
+
+end=5
+# doesn't give the range
+for i in {1..$end}; do
+    echo "$i"
+done
+
+# C-style for-loop insteád if having varible
+for ((i=0; i<end; i++)); do
+    echo "$((i*2))"
+done

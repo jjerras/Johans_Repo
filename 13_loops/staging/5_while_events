@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+echo "$PWD"
+mkdir -p staging
+
+inotifywait -m -e close_write -e moved_to --format "%f" "$PWD" | while read -r filename; do
+    echo "$filename"
+    mv "$filename" staging/
+done

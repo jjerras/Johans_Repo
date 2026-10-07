@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+filename="$1"
+
+case "$filename" in
+    *.txt) echo "'$filename' is a txt file";;
+    *.png|*.jpeg|*.jpg) echo "'$filename' is a image file";;
+    *) echo "is another file format";;
+esac
+

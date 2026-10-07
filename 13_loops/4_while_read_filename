@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# IFS - internal field separator ->
+# separates space, tabs and newlines
+
+while IFS= read -r filename; do
+    filename="${filename#*. }"
+    if [[ -f "$filename" ]]; then
+        echo "'$filename' exists"
+    else
+        echo "'$filename' not found"
+    fi
+done < assets/filelist.txt

@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+file_path="$1"
+
+if [[ -f "$file_path" ]]; then
+    echo "file '$file_path' exists"
+    # nested if
+    if [[ ! -x "$file_path" ]]; then
+        echo "file '$file_path' is not executable"
+    else
+        echo "file '$file_path' is executable"
+fi
+else
+    echo "file '$file_path' do not exists"
+    exit 1
+fi
+
+echo "program continues here..."
+
+
